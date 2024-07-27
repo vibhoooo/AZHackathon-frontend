@@ -1,0 +1,169 @@
+:root {
+  --bg-color: #1a1a2e;
+  --text-color: #e0e0e0;
+  --primary-color: #0f3460;
+  --secondary-color: #16213e;
+  --accent-color: #e94560;
+  --hover-color: #533483;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Arial', sans-serif;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.game-info h1 {
+  font-size: 3rem;
+  color: var(--accent-color);
+  margin-bottom: 10px;
+}
+
+.game-info p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: var(--hover-color);
+}
+
+.logout-button {
+  background-color: var(--accent-color);
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-lobby-button,
+.join-lobby-button {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+.center-section {
+  flex-grow: 1;
+}
+
+.lobby-list {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.lobby-list h2 {
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.scrollable-list {
+  max-height: 400px; 
+  overflow-y: auto;
+}
+
+.lobby-item {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #333, #111);
+  border: 1px solid #ff8c00;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-family: Arial, sans-serif;
+}
+
+.lobby-item:hover {
+  background: linear-gradient(135deg, #ff8c00, #ff4500);
+  transform: scale(1.05);
+}
+
+/* Scrollbar Styles */
+.scrollable-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+.scrollable-list::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+.scrollable-list::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+.scrollable-list::-webkit-scrollbar-thumb:hover {
+  background-color: var(--hover-color);
+}
+
+/* Animated Letters */
+.animated-letters-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color: #000000;
+}
+
+.animated-letters {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+.cursor {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Login Form Container */
+.login-form-container {
+  background-color: blanchedalmond;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+}

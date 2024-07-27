@@ -1,0 +1,65 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif; /* Use Arial, sans-serif */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.join-lobby-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.join-lobby-container h1 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #ff8c00; /* Game-like color */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #ff8c00; /* Border color */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff4500; /* Change border color on focus */
+}
+
+.join-button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #1e90ff, #0066cc); /* Button color */
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.join-button:hover {
+    background: linear-gradient(135deg, #0066cc, #1e90ff);
+    transform: scale(1.05);
+}
